@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piazza Auto Detail</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+<a href="index.html" class="header-link">
+  <h1><img src="logo2.png" alt="Piazza Auto Detail Logo"> <u>Piazza Auto Detail</u></h1>
+</a>
+<nav>
+  <ul>
+    <li><a href="#" id="calendly-popup-nav">Book Online</a></li>
+    <li><a href="pricing.html">Services & Pricing</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("calendly-popup-nav").addEventListener("click", function(event) {
+      event.preventDefault();
+      Calendly.initPopupWidget({url: 'https://calendly.com/sales-bj8'});
+    });
+  });
+</script>
+
+  
+    <!-- Contact Section -->
+<section id="contact">
+  <div class="contact-box">
+    <div class="contact-info">
+      <p class="contact-text">Contact us with any questions at <u>sales@piazzaautodetail.com</u></p>
+      <p class="contact-text">Or book an appointment online.</p>
+    </div>
+  </div>
+</section>
+
+    <!-- Calendly badge widget begin - PLACEHOLDER -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/sales-bj8', text: 'Book a Detailing', color: '#ffffff', textColor: '#1a1a1a', branding: true }); }</script>
+<!-- Calendly badge widget end -->
+
+  
+    <footer>
+    <p>&copy; 2023 Piazza Auto Detail. All rights reserved.</p>
+  </footer>
+</body>
+</html>
