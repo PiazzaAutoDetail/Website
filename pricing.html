@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piazza Auto Detail</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+<a href="index.html" class="header-link">
+  <h1><img src="logo2.png" alt="Piazza Auto Detail Logo"> <u>Piazza Auto Detail</u></h1>
+</a>
+<nav>
+  <ul>
+    <li><a href="#" id="calendly-popup-nav">Book Online</a></li>
+    <li><a href="pricing.html">Services & Pricing</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("calendly-popup-nav").addEventListener("click", function(event) {
+      event.preventDefault();
+      Calendly.initPopupWidget({url: 'https://calendly.com/sales-bj8'});
+    });
+  });
+</script>
+
+  
+    <!-- Calendly badge widget begin - PLACEHOLDER -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/sales-bj8', text: 'Book a Detailing', color: '#ffffff', textColor: '#1a1a1a', branding: true }); }</script>
+<!-- Calendly badge widget end -->
+
+
+<section class="pricing-section">
+  <div class="pricing-box">
+    <h2>Basic Cleaning</h2>
+    <p><span class="duration">Duration: 1 hour</span></p>
+    <ul class="included-list">
+      <li>Exterior wax and wash</li>
+     <li>Interior vacuuming & Dashboard cleaning</li>
+	 <li>Total: $25</li>
+    </ul>
+  </div>
+  <div class="pricing-box">
+    <h2>Exterior Detailing</h2>
+    <p><span class="duration">Duration: 2 hours</span></p>
+    <ul class="included-list">
+	<li>Tire & Rim cleaning</li>
+      <li>Exterior wash and wax</li>
+	  <li>Window cleaning</li>
+	  <li>Speed Detailing spray</li>
+	  <li>Total: $70</li>
+    </ul>
+  </div>
+  <div class="pricing-box">
+    <h2>Interior Detailing</h2>
+    <p><span class="duration">Duration: 2 hours 30 minutes</span></p>
+    <ul class="included-list">
+      <li>Interior vacuuming</li>
+      <li>Dashboard & Vent cleaning</li>
+      <li>Upholstery & Carpet deep cleaning</li>
+	  <li>Total: $70</li>
+    </ul>
+  </div>
+  <div class="pricing-box">
+    <h2>Interior+Exterior Package</h2>
+    <p><span class="duration">Duration: 4 hours</span></p>
+    <ul class="included-list">
+      <li>Tire & Rim cleaning</li>
+	  <li>Exterior wax and wash</li>
+	  <li>Window cleaning</li>
+	  <li>Speed Detailing Spray</li>
+	  <li>Interior vacuuming</li>
+	  <li>Dashboard & Vent cleaning</li>
+	  <li>Upholstery & Carpet deep cleaning</li>
+	  <li>Total: $130</li>
+    </ul>
+  </div>
+</section>
+
+
+  
+    <footer>
+    <p>&copy; 2023 Piazza Auto Detail. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
